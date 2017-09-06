@@ -9,9 +9,3 @@ deploy:
     secure: TzCdHobNU/+oJAVMMJbbMjVNLZCsRoa8q24+LtT2Qcxu8Ph8S1R66jVmqBB5ZnFelPgssogvXtdxmKaFpT20hbPGBCug+XYn6W4akKbF8A0aKnslCr4VgefCEYvz+APG0ck6v70xslkJRjzYIY/N3IxNxxy9BbiS7G38smsyKj9KJTGyeY+bsiQYGzLhCiIj7QEKEqaHUInLjrLFhDID2SGAKahULsiN1bhN03e0rWCWlAefVqHSu+dujMl+PSnYEoncj3PmPwIf4fuoO5LioaJo2T2OmTJV63xl06CMQo009CwL4bqq2HQ0vMJMXn017aExxWhtS5lQDVlua5XBiUPTnF5aUABTeZ/C6NBLzBgZg+AYvPjF9vcs1mDv+BkPVYUnKxzli2sjNSrQIiJpSnQIpoCne9UYmHBQ6NrVJ5sGdZ5ummi5h1CsbMZfJyYQTMxZKcROVKZUnH1xFrD5Z8FqGkrDNfmh/zyPCc6ppFAGT2d/OpfJe6bXtuACyLC8mK4N8m7c3MTwzTgLuiCTEEXui2F4ZctKxN0aTxKFd6652esX4Wr8A5FcdGV7mp2Dwn9Q9QyD8wU9B2zbvWgQC/fvsExGoSx2OrBjhuRcMenaCKSZ8ukR/WUBTkhBb2Y3FeWrVRxMUctma2thd5B1DTlOk1fqlOPPFF6GIpVQKa4=
 services:
   - postgresql
-script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
-  - bundle exec rake
-before_script:
-  - psql -c 'create database ruby-getting-started_test;' -U postgres
