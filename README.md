@@ -1,3 +1,15 @@
+## Testing HEROKU + RUBY + TRAVIS
+
+https://github.com/heroku/ruby-getting-started.git
+
+
+
+
+------------------------
+
+
+
+
 # ruby-getting-started
 
 A barebones Rails app, which can easily be deployed to Heroku.
