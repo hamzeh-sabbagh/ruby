@@ -99,7 +99,7 @@ GEM
     net-http-pipeline (1.0.1)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
-    pg (0.21.0)
+    pg (0.20.0)
     puma (3.10.0)
     pusher-client (0.6.2)
       json
@@ -203,7 +203,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.0)
   jquery-rails
-  pg
+  pg (= 0.20.0)
   puma
   rails (= 4.2.8)
   rails_12factor
