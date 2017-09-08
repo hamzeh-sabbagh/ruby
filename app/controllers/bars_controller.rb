@@ -66,7 +66,7 @@ class BarsController < ApplicationController
     def set_bar
       @bar = Bar.find(params[:id])
     end
-
+  
     # Never trust parameters from the scary internet, only allow the white list through.
     def bar_params
       params.require(:bar).permit(:age, :owner)
